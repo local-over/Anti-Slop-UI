@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anti-Slop UI | Research Paper</title>
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="style.css?v=1.2">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -71,18 +71,23 @@
         </div>
     </footer>
 
-    <div id="install-modal" class="modal" style="display: none;">
-        <div class="modal-content glass-panel">
+        <div id="install-modal" class="modal" style="display: none;">
+        <div class="modal-content install-modal glass-panel">
             <span class="close-modal">&times;</span>
-            <h2>Install Anti-Slop UI Skill</h2>
-            <p style='margin-bottom: 24px; color: var(--text-secondary);'>Copy this magic prompt into Cursor, Claude, or Antigravity:</p>
-            <div class="code-block" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; background: #000; padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2);">
-                <code id="prompt-text" style="font-size: 0.9rem; color: #A1A1AA; overflow-x: auto; white-space: nowrap; margin-right: 16px; scrollbar-width: none;">"Please run this exact command to clone the Anti-Slop UI framework: git clone https://github.com/local-over/Anti-Slop-UI.git. Then, read the Anti-Slop-UI/README.md file and copy the contents of Anti-Slop-UI/public-skills/SKILL.md into your global skills configuration or workspace instructions to cure AI UI slop."</code>
-                <button id="copy-btn" class="btn primary" style="flex-shrink: 0; padding: 8px 16px; height: auto;">Copy</button>
+            <div class="modal-header-simple">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="modal-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <h2>Install Skill</h2>
+            </div>
+            <p class="modal-desc">Copy this magic prompt into your AI agent (Cursor, Claude, or Antigravity) to initialize the framework.</p>
+            <div class="install-code-container">
+                <div class="code-scroll-area">
+                    <code id="prompt-text">Please run this exact command to clone the Anti-Slop UI framework: git clone https://github.com/local-over/Anti-Slop-UI.git. Then, read the Anti-Slop-UI/README.md file and copy the contents of Anti-Slop-UI/public-skills/SKILL.md into your global skills configuration or workspace instructions to cure AI UI slop.</code>
+                </div>
+                <button id="copy-btn" class="btn primary copy-btn-small">Copy</button>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="script.js?v=1.1"></script>
+    <script src="script.js?v=1.2"></script>
 </body>
 </html>
