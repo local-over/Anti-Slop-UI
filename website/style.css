@@ -321,6 +321,65 @@ h1 {
   color: var(--text-secondary);
 }
 
+/* Support & Author Section */
+.support {
+  padding: 0 24px 80px;
+}
+.support-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.author-badge {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 32px;
+}
+.author-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+.author-badge h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.author-badge p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+.donation-box h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+.donation-box p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+.crypto-address {
+  background: var(--bg-primary);
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+.crypto-address code {
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--text-primary);
+  word-break: break-all;
+}
+
 /* Page Headers (for subpages) */
 .page-content {
   padding: 80px 24px;
