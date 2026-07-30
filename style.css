@@ -601,6 +601,7 @@ footer {
 /* Install Modal Specific */
 .install-modal {
   max-width: 520px;
+  margin: auto;
   padding: 32px;
   text-align: center;
 }
@@ -642,6 +643,7 @@ footer {
 }
 .code-scroll-area {
   flex: 1;
+  min-width: 0;
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none; /* Firefox */
@@ -661,3 +663,5 @@ footer {
   font-size: 0.85rem;
   flex-shrink: 0;
 }
+
+#install-modal { align-items: center; justify-content: center; }
