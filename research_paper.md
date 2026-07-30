@@ -2,13 +2,13 @@
 title: "Anti-Slop UI: A Multi-Layered Heuristic Approach to Eliminating Artificial Intelligence Design Hallucinations"
 author: "Hassan Elkady"
 date: "July 2026"
-institution: "Arab Academy for Science, Technology and Maritime Transport (AAST) - Computer Engineering Department"
+institution: "Computer Engineering Student, Arab Academy for Science, Technology and Maritime Transport (AAST)"
 contact: "https://github.com/local-over/Anti-Slop-UI"
 ---
 
 # Anti-Slop UI: A Multi-Layered Heuristic Approach to Eliminating Artificial Intelligence Design Hallucinations
 **By Hassan Elkady**  
-*Arab Academy for Science, Technology and Maritime Transport (AAST) - Computer Engineering Department*
+*Computer Engineering Student, Arab Academy for Science, Technology and Maritime Transport (AAST)*
 
 ---
 
