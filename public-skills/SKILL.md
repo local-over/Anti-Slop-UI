@@ -18,6 +18,8 @@ To generate UI, execute the following 5 groups strictly in order. Do not mix the
 6. **Group E (Physics):** Pick 1 layer from `skills/layers/group-e-advanced/`.
 
 ## Execution Rules
+- **DO NOT INVENT:** You must not add any of your own styling, logic, or assumptions. Do not "vibe-code."
+- **DIRECT EXECUTION:** You must directly run the layers and design schools as if they are strict executable code. Apply exactly what they specify and nothing else.
 - **READ THE FILES:** You must explicitly read the `.md` files you chose to gather their exact CSS tokens, grid math, and Anti-Slop Checklists.
 - **NO DEVIATION:** If a Design School says "pure black background," you use pure black. No gray slop.
 - **NO GENERIC SHADOWS:** Never use `box-shadow: 0 4px 6px rgba(0,0,0,0.1)`. Use the exact physics specified in the chosen heuristic layer.
