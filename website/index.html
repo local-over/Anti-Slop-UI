@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Slop UI | The Framework to Cure AI Design Hallucinations</title>
+    <meta name="description" content="A multi-layered heuristic framework to stop AI slop and generate expert-level UI code.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="glow-bg"></div>
+
+    <nav>
+        <div class="logo">Anti-Slop UI</div>
+        <div class="nav-links">
+            <a href="#schools">Design Schools</a>
+            <a href="#layers">50 Layers</a>
+            <a href="#paper">Research Paper</a>
+            <a href="https://github.com/local-over/Anti-Slop-UI" target="_blank" class="btn">GitHub</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Cure AI Design <span class="highlight">Slop.</span></h1>
+            <p>A deterministic, 50-layer state-machine architecture to force LLMs to generate world-class, premium UI. No more generic vibes. Just pure mathematical design constraints.</p>
+            <div class="cta-group">
+                <a href="#guide" class="btn primary">Read the Guide</a>
+                <a href="#schools" class="btn secondary">Browse 61 Schools</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glass-card">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <pre><code><span class="comment">// 🚫 AI SLOP DETECTED</span>
+.button {
+  border-radius: 8px; <span class="comment">/* Generic */</span>
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+<span class="comment">// ✅ EXPERT HEURISTIC LOADED (Layer 42)</span>
+.button {
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-neu-inset);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}</code></pre>
+            </div>
+        </div>
+    </header>
+
+    <section id="guide" class="guide-section">
+        <h2>The State-Reset Architecture</h2>
+        <div class="grid-container">
+            <div class="feature-card">
+                <h3>Group A: Structure</h3>
+                <p>Layers 1-10 constrain the grid. Forcing masonry, asymmetric tension, and avoiding basic center alignment.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Group B: Typography</h3>
+                <p>Layers 11-20 dictate type scales. Banning intermediate font weights, forcing negative tracking on massive headers.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Group C: Components</h3>
+                <p>Layers 21-30 define geometric constraints. 0px Brutalism or 9999px Pill radii. No more generic 8px squircular slop.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Group D: Aesthetics</h3>
+                <p>Layers 31-40 control light and color. Forcing pure flat design, heavy glassmorphism, or high-contrast brutalist gradients.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Group E: Physics</h3>
+                <p>Layers 41-50 govern motion and Z-space. Spring physics, scroll-driven animations, and WebGL immersive layers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="schools" class="schools-section">
+        <h2>61 Expert Design Schools</h2>
+        <p class="subtitle">Positive constraints downloaded directly from the world's best engineering teams.</p>
+        <div class="data-grid" id="schools-container">
+            <!-- Dynamically populated -->
+        </div>
+    </section>
+    
+    <section id="layers" class="layers-section">
+        <h2>50 Heuristic Layers</h2>
+        <p class="subtitle">The definitive anti-slop rulesets to constrain AI generation.</p>
+        <div class="data-grid" id="layers-container">
+            <!-- Dynamically populated -->
+        </div>
+    </section>
+
+    <!-- Modal for viewing full Markdown content -->
+    <div id="content-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Title</h2>
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Anti-Slop UI Framework. Authored by Hassan Elkady (@local-over).</p>
+    </footer>
+
+    <!-- Marked.js for parsing markdown in the browser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
