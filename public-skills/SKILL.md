@@ -1,14 +1,38 @@
 ---
 name: anti-slop-ui
-description: A strict heuristic framework to prevent AI design hallucinations. This skill serves as an index to the Anti-Slop UI framework.
+description: A strict heuristic framework to prevent AI design hallucinations. This skill serves as an index and workflow guide to the Anti-Slop UI framework.
 ---
 
 # Anti-Slop UI Framework
-**Goal:** Prevent the generation of generic "AI Slop" by using predefined expert-level design heuristics. 
+**Goal:** Prevent the generation of generic "AI Slop" by using predefined expert-level design heuristics.
 **Instructions:** Use the Design Schools and UI Layers linked below as a strong foundation. You may apply your own creativity and adapt these heuristics to best fit the specific needs of the project.
 
-## Design Schools
-Choose ONE Design School for your project and read its file:
+## Workflows
+
+### 1. New UI Generation Mode
+When creating a new UI from scratch, follow these state-reset steps:
+1. **Choose 1 Design School:** Pick a school from the index below. Read it.
+2. **Group A (Structure):** Pick 1 layer from Group A.
+3. **Group B (Typography):** Pick 1 layer from Group B.
+4. **Group C (Components):** Pick 1 layer from Group C.
+5. **Group D (Aesthetics):** Pick 1 layer from Group D.
+6. **Group E (Physics):** Pick 1 layer from Group E.
+
+### 2. Edit Mode (Existing Website)
+When editing an already existing website:
+1. Do not rewrite the entire architecture. 
+2. Identify the closest matching **Design School** to the existing site and read it to align your CSS tokens.
+3. Select specific **Layers** from the groups below that enhance the component you are currently editing (e.g., adding a micro-interaction from Group E or adjusting typography from Group B).
+
+### 3. Targeted Slop Removal
+When asked to fix a specific thing or remove general AI slop:
+1. Identify the sloppy element (e.g., generic 8px rounded corners, bad shadows).
+2. Pick the corresponding corrective layer from the index below (e.g., an Aesthetics layer for shadows or a Structure layer for layouts) and apply its strict heuristics to cure the slop.
+
+---
+
+## Design Schools Index
+Choose a Design School for your project and read its file:
 - [Adobe Spectrum](Anti-Slop-UI/skills/schools/adobe-spectrum.md)
 - [Airbnb Dls](Anti-Slop-UI/skills/schools/airbnb-dls.md)
 - [Ant Design](Anti-Slop-UI/skills/schools/ant-design.md)
@@ -72,7 +96,7 @@ Choose ONE Design School for your project and read its file:
 - [Wise](Anti-Slop-UI/skills/schools/wise.md)
 - [Xbox Fluent](Anti-Slop-UI/skills/schools/xbox-fluent.md)
 
-## UI Layers
+## UI Layers Index
 Mix and match layers from the groups below by reading their files:
 
 ### Group A Structure
