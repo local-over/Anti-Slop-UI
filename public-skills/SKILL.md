@@ -17,17 +17,19 @@ When creating a new UI from scratch, follow these state-reset steps:
 4. **Group C (Components):** Pick 1 layer from Group C.
 5. **Group D (Aesthetics):** Pick 1 layer from Group D.
 6. **Group E (Physics):** Pick 1 layer from Group E.
+7. **Group F (Anti-Slop Blacklist):** ALWAY READ `base-ai-slop.md` to ensure you aren't doing anything forbidden.
 
 ### 2. Edit Mode (Existing Website)
 When editing an already existing website:
 1. Do not rewrite the entire architecture. 
 2. Identify the closest matching **Design School** to the existing site and read it to align your CSS tokens.
-3. Select specific **Layers** from the groups below that enhance the component you are currently editing (e.g., adding a micro-interaction from Group E or adjusting typography from Group B).
+3. Select specific **Layers** from the groups below that enhance the component you are currently editing.
 
 ### 3. Targeted Slop Removal
 When asked to fix a specific thing or remove general AI slop:
 1. Identify the sloppy element (e.g., generic 8px rounded corners, bad shadows).
-2. Pick the corresponding corrective layer from the index below (e.g., an Aesthetics layer for shadows or a Structure layer for layouts) and apply its strict heuristics to cure the slop.
+2. Read the `base-ai-slop.md` blacklist to identify the specific slop token.
+3. Pick the corresponding corrective layer from the index below to cure the slop.
 
 ---
 
@@ -160,6 +162,8 @@ Mix and match layers from the groups below by reading their files:
 - [Spring Physics](Anti-Slop-UI/skills/layers/group-e-advanced/spring-physics.md)
 - [Typewriter Effect](Anti-Slop-UI/skills/layers/group-e-advanced/typewriter-effect.md)
 - [Webgl 3d Immersive](Anti-Slop-UI/skills/layers/group-e-advanced/webgl-3d-immersive.md)
+### Group F Anti Slop Blacklist
+- [Base Ai Slop](Anti-Slop-UI/skills/layers/group-f-anti-slop-blacklist/base-ai-slop.md)
 ### Layers
 - [Mobile First](Anti-Slop-UI/skills/layers/mobile-first.md)
 - [Webgl 3d](Anti-Slop-UI/skills/layers/webgl-3d.md)
