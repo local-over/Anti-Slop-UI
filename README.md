@@ -46,3 +46,9 @@ By forcing the AI to load exactly 1 Design School and 1 Layer from each group, i
 *   `/skills/layers/` - 50 multiple-choice `.md` heuristic layer files.
 *   `/website/` - The interactive viewer built strictly using the framework's logic (Vercel Minimalism + Dark Mode + Glassmorphism).
 *   `research_paper.md` - The formal research paper supporting this framework by Hassan Elkady (AAST).
+
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/10000000?s=200&v=4" alt="Hassan Elkady" width="80" style="border-radius: 50%;">
+  <br>
+  <strong>Architected by Hassan Elkady (AAST)</strong>
+</p>
