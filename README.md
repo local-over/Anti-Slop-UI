@@ -50,5 +50,5 @@ By forcing the AI to load exactly 1 Design School and 1 Layer from each group, i
 <p align="center">
   <img src="https://avatars.githubusercontent.com/u/117250235?v=4" alt="Hassan Elkady" width="80" style="border-radius: 50%;">
   <br>
-  <strong>Architected by Hassan Elkady (AAST)</strong>
+  <strong>Architected by Hassan Elkady</strong>
 </p>
