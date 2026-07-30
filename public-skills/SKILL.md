@@ -4,8 +4,8 @@ description: A strict heuristic framework to prevent AI design hallucinations. T
 ---
 
 # Anti-Slop UI Framework
-**Goal:** Prevent the generation of generic "AI Slop" by strictly following predefined design constraints. 
-**Instructions:** Do not "vibe-code" or invent styles. Read the specific files linked below and strictly apply their exact CSS tokens, layout math, and physics.
+**Goal:** Prevent the generation of generic "AI Slop" by using predefined expert-level design heuristics. 
+**Instructions:** Use the Design Schools and UI Layers linked below as a strong foundation. You may apply your own creativity and adapt these heuristics to best fit the specific needs of the project.
 
 ## Design Schools
 Choose ONE Design School for your project and read its file:
