@@ -52,3 +52,16 @@ By forcing the AI to load exactly 1 Design School and 1 Layer from each group, i
   <br>
   <strong>Architected by Hassan Elkady</strong>
 </p>
+
+## 📚 Academic Citation
+
+If you use this framework or heuristic methodology in your academic research, please cite it as:
+
+```bibtex
+@article{elkady2026antislop,
+  title={Anti-Slop UI: A Multi-Layered Heuristic Approach to Eliminating Artificial Intelligence Design Hallucinations},
+  author={Elkady, Hassan},
+  year={2026},
+  url={https://local-over.github.io/Anti-Slop-UI/research_paper.pdf}
+}
+```

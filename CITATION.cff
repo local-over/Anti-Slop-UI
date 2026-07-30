@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or framework in your research, please cite it as below."
+authors:
+  - family-names: "Elkady"
+    given-names: "Hassan"
+    affiliation: "Computer Engineering Student, Arab Academy for Science, Technology and Maritime Transport (AAST)"
+title: "Anti-Slop UI: A Multi-Layered Heuristic Approach to Eliminating Artificial Intelligence Design Hallucinations"
+version: 1.0.4
+date-released: 2026-07-31
+url: "https://github.com/local-over/Anti-Slop-UI"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Elkady"
+      given-names: "Hassan"
+      affiliation: "Arab Academy for Science, Technology and Maritime Transport (AAST)"
+  title: "Anti-Slop UI: A Multi-Layered Heuristic Approach to Eliminating Artificial Intelligence Design Hallucinations"
+  year: 2026
+  url: "https://local-over.github.io/Anti-Slop-UI/research_paper.pdf"
