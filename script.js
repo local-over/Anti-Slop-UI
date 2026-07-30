@@ -106,4 +106,44 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Install Modal Logic
+    const installBtn = document.getElementById('install-btn');
+    const installModal = document.getElementById('install-modal');
+    if (installModal) {
+        const closeInstallModal = installModal.querySelector('.close-modal');
+        const copyBtn = document.getElementById('copy-btn');
+        const promptText = document.getElementById('prompt-text');
+
+        if (installBtn) {
+            installBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                installModal.style.display = 'flex';
+            });
+        }
+
+        if (closeInstallModal) {
+            closeInstallModal.addEventListener('click', () => {
+                installModal.style.display = 'none';
+            });
+        }
+
+        window.addEventListener('click', (e) => {
+            if (e.target === installModal) {
+                installModal.style.display = 'none';
+            }
+        });
+
+        if (copyBtn && promptText) {
+            copyBtn.addEventListener('click', () => {
+                navigator.clipboard.writeText(promptText.innerText).then(() => {
+                    const originalText = copyBtn.innerText;
+                    copyBtn.innerText = 'Copied!';
+                    setTimeout(() => {
+                        copyBtn.innerText = originalText;
+                    }, 2000);
+                });
+            });
+        }
+    }
 });

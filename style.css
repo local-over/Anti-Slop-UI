@@ -497,6 +497,33 @@ h1 {
 
 .close-btn:hover { color: var(--text-primary); }
 
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+.close-modal:hover { color: var(--text-primary); }
+
+.code-block {
+  margin-top: 24px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.code-block code {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
 .modal-body {
   padding: 32px;
   color: var(--text-secondary);

@@ -40,7 +40,7 @@
                 <a href="layers.html" class="active">Layers</a>
                 <a href="paper.html">Research Paper</a>
                 <a href="https://github.com/local-over/Anti-Slop-UI" class="btn secondary">GitHub</a>
-                <a href="https://github.com/local-over/Anti-Slop-UI/tree/main/public-skills" class="btn primary">Install AI Skill</a>
+                <button class="btn primary" id="install-btn">Install AI Skill</button>
             </div>
         </div>
     </nav>
@@ -81,6 +81,18 @@
             </div>
         </div>
     </footer>
+
+    <div id="install-modal" class="modal" style="display: none;">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2>Install Anti-Slop UI Skill</h2>
+            <p>Copy and paste this magic prompt into Cursor, Claude, or Antigravity to instantly upgrade your AI:</p>
+            <div class="code-block">
+                <code id="prompt-text">"Please run this exact command to clone the Anti-Slop UI framework: git clone https://github.com/local-over/Anti-Slop-UI.git. Then, read the Anti-Slop-UI/README.md file and copy the contents of Anti-Slop-UI/public-skills/SKILL.md into your global skills configuration or workspace instructions to cure AI UI slop."</code>
+                <button id="copy-btn" class="btn secondary">Copy</button>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="data.js"></script>
