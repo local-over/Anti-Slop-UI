@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Slop UI | Research Paper</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="noise-overlay"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <rect x="10" y="10" width="35" height="35" rx="8" fill="url(#grad1)" />
+                    <rect x="55" y="10" width="35" height="35" rx="8" fill="url(#grad2)" />
+                    <rect x="10" y="55" width="80" height="35" rx="8" fill="url(#grad3)" />
+                    <defs>
+                        <linearGradient id="grad1" x1="10" y1="10" x2="45" y2="45" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EDEDED" />
+                            <stop offset="1" stop-color="#A1A1AA" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="55" y1="10" x2="90" y2="45" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#A1A1AA" />
+                            <stop offset="1" stop-color="#71717A" />
+                        </linearGradient>
+                        <linearGradient id="grad3" x1="10" y1="55" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFFFFF" stop-opacity="0.2" />
+                            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Anti-Slop UI</span>
+            </a>
+            <div class="links">
+                <a href="schools.html">Schools</a>
+                <a href="layers.html">Layers</a>
+                <a href="paper.html" class="active">Research Paper</a>
+                <a href="https://github.com/local-over/Anti-Slop-UI" class="btn primary">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <div class="page-header paper-header">
+            <h1>Academic Research</h1>
+            <p>Read the formal methodology behind the State-Reset Architecture authored by Hassan Elkady.</p>
+            <a href="research_paper.pdf" class="btn primary lg download-btn" download>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download PDF
+            </a>
+        </div>
+        
+        <div class="paper-container glass-panel" id="paper-content">
+            <!-- Paper content populated by JS -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span>Anti-Slop UI © 2026.</span>
+            </div>
+            <div class="footer-right">
+                <span>Architected by Hassan Elkady (AAST).</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

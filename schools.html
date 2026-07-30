@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Slop UI | Design Schools</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="noise-overlay"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <rect x="10" y="10" width="35" height="35" rx="8" fill="url(#grad1)" />
+                    <rect x="55" y="10" width="35" height="35" rx="8" fill="url(#grad2)" />
+                    <rect x="10" y="55" width="80" height="35" rx="8" fill="url(#grad3)" />
+                    <defs>
+                        <linearGradient id="grad1" x1="10" y1="10" x2="45" y2="45" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EDEDED" />
+                            <stop offset="1" stop-color="#A1A1AA" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="55" y1="10" x2="90" y2="45" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#A1A1AA" />
+                            <stop offset="1" stop-color="#71717A" />
+                        </linearGradient>
+                        <linearGradient id="grad3" x1="10" y1="55" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFFFFF" stop-opacity="0.2" />
+                            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Anti-Slop UI</span>
+            </a>
+            <div class="links">
+                <a href="schools.html" class="active">Schools</a>
+                <a href="layers.html">Layers</a>
+                <a href="paper.html">Research Paper</a>
+                <a href="https://github.com/local-over/Anti-Slop-UI" class="btn primary">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <div class="page-header">
+            <h1>61 Design Schools</h1>
+            <p>Strict CSS tokens and spatial constraints downloaded from the world's elite engineering teams.</p>
+        </div>
+        
+        <div class="grid" id="schools-grid">
+            <!-- Dynamically populated by JS -->
+        </div>
+    </main>
+
+    <!-- Interactive Modal -->
+    <div id="data-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h3 id="modal-title">Heuristic Detail</h3>
+                <button class="close-btn" id="close-modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Markdown parsed here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span>Anti-Slop UI © 2026.</span>
+            </div>
+            <div class="footer-right">
+                <span>Architected by Hassan Elkady (AAST).</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Marked.js for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
