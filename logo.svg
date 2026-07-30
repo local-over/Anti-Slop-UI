@@ -1,0 +1,19 @@
+<svg width="400" height="400" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="10" width="35" height="35" rx="8" fill="url(#grad1)" />
+    <rect x="55" y="10" width="35" height="35" rx="8" fill="url(#grad2)" />
+    <rect x="10" y="55" width="80" height="35" rx="8" fill="url(#grad3)" />
+    <defs>
+        <linearGradient id="grad1" x1="10" y1="10" x2="45" y2="45" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#333333" />
+            <stop offset="1" stop-color="#111111" />
+        </linearGradient>
+        <linearGradient id="grad2" x1="55" y1="10" x2="90" y2="45" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#666666" />
+            <stop offset="1" stop-color="#333333" />
+        </linearGradient>
+        <linearGradient id="grad3" x1="10" y1="55" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#111111" stop-opacity="0.8" />
+            <stop offset="1" stop-color="#111111" stop-opacity="0.2" />
+        </linearGradient>
+    </defs>
+</svg>
