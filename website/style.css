@@ -597,3 +597,67 @@ footer {
   .paper-container { padding: 24px; }
   .layer-animation-container { transform: scale(0.6); }
 }
+
+/* Install Modal Specific */
+.install-modal {
+  max-width: 520px;
+  padding: 32px;
+  text-align: center;
+}
+.modal-header-simple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.modal-icon {
+  color: var(--text-primary);
+  opacity: 0.8;
+}
+.modal-header-simple h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.modal-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.install-code-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 8px 8px 8px 16px;
+  border-radius: var(--radius-sm);
+  transition: border-color 0.2s;
+}
+.install-code-container:hover {
+  border-color: var(--border-hover);
+}
+.code-scroll-area {
+  flex: 1;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+  text-align: left;
+}
+.code-scroll-area::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+.code-scroll-area code {
+  color: var(--text-primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.85rem;
+}
+.copy-btn-small {
+  padding: 0 16px;
+  height: 32px;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
