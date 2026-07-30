@@ -3,115 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anti-Slop UI | The Framework to Cure AI Design Hallucinations</title>
-    <meta name="description" content="A multi-layered heuristic framework to stop AI slop and generate expert-level UI code.">
+    <title>Anti-Slop UI | Enterprise Framework</title>
+    <meta name="description" content="A deterministic, multi-layered state-machine architecture to cure AI design hallucinations.">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="background-glow"></div>
     <div class="noise-overlay"></div>
-    <div class="glow-bg"></div>
 
-    <nav>
-        <div class="logo">Anti-Slop UI</div>
-        <div class="nav-links">
-            <a href="#schools">Design Schools</a>
-            <a href="#layers">50 Layers</a>
-            <a href="#paper">Research Paper</a>
-            <a href="https://github.com/local-over/Anti-Slop-UI" target="_blank" class="btn">GitHub</a>
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Anti-Slop UI
+            </div>
+            <div class="links">
+                <a href="#schools">Design Schools</a>
+                <a href="#layers">Heuristics</a>
+                <a href="https://github.com/local-over/Anti-Slop-UI" class="btn primary">GitHub</a>
+            </div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="hero-content">
-            <h1>Cure AI Design <span class="highlight">Slop.</span></h1>
-            <p>A deterministic, 50-layer state-machine architecture to force LLMs to generate world-class, premium UI. No more generic vibes. Just pure mathematical design constraints.</p>
+            <div class="badge">v1.0 Released • 111 Heuristics</div>
+            <h1>Generate <span class="gradient-text">World-Class</span> UI.</h1>
+            <p>A deterministic, 50-layer state-machine architecture that forces LLMs to generate premium, expert-level interfaces. Zero hallucination. Zero slop.</p>
             <div class="cta-group">
-                <a href="#guide" class="btn primary">Read the Guide</a>
-                <a href="#schools" class="btn secondary">Browse 61 Schools</a>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="glass-card">
-                <div class="code-header">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                </div>
-                <pre><code><span class="comment">// 🚫 AI SLOP DETECTED</span>
-.button {
-  border-radius: 8px; <span class="comment">/* Generic */</span>
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-}
-
-<span class="comment">// ✅ EXPERT HEURISTIC LOADED (Layer 42)</span>
-.button {
-  border-radius: var(--radius-pill);
-  box-shadow: var(--shadow-neu-inset);
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}</code></pre>
+                <a href="#schools" class="btn primary lg">Browse Schools</a>
+                <a href="#layers" class="btn secondary lg">View Layers</a>
             </div>
         </div>
     </header>
 
-    <section id="guide" class="guide-section">
-        <h2>The State-Reset Architecture</h2>
-        <div class="grid-container">
-            <div class="feature-card">
-                <h3>Group A: Structure</h3>
-                <p>Layers 1-10 constrain the grid. Forcing masonry, asymmetric tension, and avoiding basic center alignment.</p>
+    <main class="container">
+        <section id="schools" class="data-section">
+            <div class="section-header">
+                <h2>61 Design Schools</h2>
+                <p>Strict CSS tokens and spatial constraints downloaded from the world's elite engineering teams.</p>
             </div>
-            <div class="feature-card">
-                <h3>Group B: Typography</h3>
-                <p>Layers 11-20 dictate type scales. Banning intermediate font weights, forcing negative tracking on massive headers.</p>
+            <div class="grid" id="schools-grid">
+                <!-- Dynamically populated by JS -->
             </div>
-            <div class="feature-card">
-                <h3>Group C: Components</h3>
-                <p>Layers 21-30 define geometric constraints. 0px Brutalism or 9999px Pill radii. No more generic 8px squircular slop.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Group D: Aesthetics</h3>
-                <p>Layers 31-40 control light and color. Forcing pure flat design, heavy glassmorphism, or high-contrast brutalist gradients.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Group E: Physics</h3>
-                <p>Layers 41-50 govern motion and Z-space. Spring physics, scroll-driven animations, and WebGL immersive layers.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="schools" class="schools-section">
-        <h2>61 Expert Design Schools</h2>
-        <p class="subtitle">Positive constraints downloaded directly from the world's best engineering teams.</p>
-        <div class="data-grid" id="schools-container">
-            <!-- Dynamically populated -->
-        </div>
-    </section>
-    
-    <section id="layers" class="layers-section">
-        <h2>50 Heuristic Layers</h2>
-        <p class="subtitle">The definitive anti-slop rulesets to constrain AI generation.</p>
-        <div class="data-grid" id="layers-container">
-            <!-- Dynamically populated -->
-        </div>
-    </section>
+        <section id="layers" class="data-section">
+            <div class="section-header">
+                <h2>50 Routing Layers</h2>
+                <p>The definitive heuristics engine covering Structure, Typography, Components, Aesthetics, and Physics.</p>
+            </div>
+            <div class="grid" id="layers-grid">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </section>
+    </main>
 
-    <!-- Modal for viewing full Markdown content -->
-    <div id="content-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2 id="modal-title">Title</h2>
-            <div id="modal-body" class="modal-body"></div>
+    <!-- Interactive Modal -->
+    <div id="data-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h3 id="modal-title">Heuristic Detail</h3>
+                <button class="close-btn" id="close-modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Markdown parsed here -->
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>Anti-Slop UI Framework. Authored by Hassan Elkady (@local-over).</p>
+        <div class="container">
+            <p>Anti-Slop UI © 2026. Architected by Hassan Elkady (AAST).</p>
+        </div>
     </footer>
 
-    <!-- Marked.js for parsing markdown in the browser -->
+    <!-- Marked.js for markdown parsing -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Data file generated previously -->
     <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
