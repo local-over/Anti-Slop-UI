@@ -6,7 +6,7 @@
     <title>Anti-Slop UI | Enterprise Framework</title>
     <meta name="description" content="A deterministic, multi-layered state-machine architecture to cure AI design hallucinations.">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background-glow"></div>
@@ -14,79 +14,121 @@
 
     <nav class="glass-nav">
         <div class="nav-container">
-            <div class="logo">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <a href="index.html" class="logo">
+                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <rect x="10" y="10" width="35" height="35" rx="8" fill="url(#grad1)" />
+                    <rect x="55" y="10" width="35" height="35" rx="8" fill="url(#grad2)" />
+                    <rect x="10" y="55" width="80" height="35" rx="8" fill="url(#grad3)" />
+                    <defs>
+                        <linearGradient id="grad1" x1="10" y1="10" x2="45" y2="45" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EDEDED" />
+                            <stop offset="1" stop-color="#A1A1AA" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="55" y1="10" x2="90" y2="45" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#A1A1AA" />
+                            <stop offset="1" stop-color="#71717A" />
+                        </linearGradient>
+                        <linearGradient id="grad3" x1="10" y1="55" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFFFFF" stop-opacity="0.2" />
+                            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
                 </svg>
-                Anti-Slop UI
-            </div>
+                <span class="logo-text">Anti-Slop UI</span>
+            </a>
             <div class="links">
-                <a href="#schools">Design Schools</a>
-                <a href="#layers">Heuristics</a>
+                <a href="schools.html">Schools</a>
+                <a href="layers.html">Layers</a>
+                <a href="paper.html">Research Paper</a>
                 <a href="https://github.com/local-over/Anti-Slop-UI" class="btn primary">GitHub</a>
             </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero split-layout">
         <div class="hero-content">
             <div class="badge">v1.0 Released • 111 Heuristics</div>
             <h1>Generate <span class="gradient-text">World-Class</span> UI.</h1>
             <p>A deterministic, 50-layer state-machine architecture that forces LLMs to generate premium, expert-level interfaces. Zero hallucination. Zero slop.</p>
             <div class="cta-group">
-                <a href="#schools" class="btn primary lg">Browse Schools</a>
-                <a href="#layers" class="btn secondary lg">View Layers</a>
+                <a href="schools.html" class="btn primary lg">Browse Schools</a>
+                <a href="layers.html" class="btn secondary lg">View Layers</a>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="layer-animation-container">
+                <div class="stack-layer layer-a">
+                    <span class="layer-label">Group A: Structure</span>
+                    <div class="wireframe-grid">
+                        <div class="wf-box wf-1"></div>
+                        <div class="wf-box wf-2"></div>
+                        <div class="wf-box wf-3"></div>
+                    </div>
+                </div>
+                <div class="stack-layer layer-b">
+                    <span class="layer-label">Group B: Typography</span>
+                    <div class="wf-text">Aa</div>
+                </div>
+                <div class="stack-layer layer-c">
+                    <span class="layer-label">Group C: Components</span>
+                    <div class="wf-button"></div>
+                </div>
+                <div class="stack-layer layer-d">
+                    <span class="layer-label">Group D: Aesthetics</span>
+                    <div class="wf-glow"></div>
+                </div>
+                <div class="stack-layer layer-e">
+                    <span class="layer-label">Group E: Physics</span>
+                    <div class="wf-physics">
+                        <svg viewBox="0 0 100 20" class="spring-curve"><path d="M0 10 Q 25 -10, 50 10 T 100 10" fill="none" stroke="currentColor" stroke-width="2" /></svg>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="container">
-        <section id="schools" class="data-section">
-            <div class="section-header">
-                <h2>61 Design Schools</h2>
-                <p>Strict CSS tokens and spatial constraints downloaded from the world's elite engineering teams.</p>
+    <section class="features container">
+        <div class="grid feature-grid">
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                <h3>Multi-Layered Routing</h3>
+                <p>Prevents context degradation by forcing the LLM through a 5-step state machine.</p>
             </div>
-            <div class="grid" id="schools-grid">
-                <!-- Dynamically populated by JS -->
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <h3>Strict Determinism</h3>
+                <p>Absolutely no 8px rounded corners unless explicitly demanded by the Design School.</p>
             </div>
-        </section>
-
-        <section id="layers" class="data-section">
-            <div class="section-header">
-                <h2>50 Routing Layers</h2>
-                <p>The definitive heuristics engine covering Structure, Typography, Components, Aesthetics, and Physics.</p>
-            </div>
-            <div class="grid" id="layers-grid">
-                <!-- Dynamically populated by JS -->
-            </div>
-        </section>
-    </main>
-
-    <!-- Interactive Modal -->
-    <div id="data-modal" class="modal">
-        <div class="modal-content glass-panel">
-            <div class="modal-header">
-                <h3 id="modal-title">Heuristic Detail</h3>
-                <button class="close-btn" id="close-modal">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                </button>
-            </div>
-            <div class="modal-body" id="modal-body">
-                <!-- Markdown parsed here -->
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <h3>Global AI Skill</h3>
+                <p>Ready to drop into Cursor, Claude, or Antigravity for instant deployment.</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer>
-        <div class="container">
-            <p>Anti-Slop UI © 2026. Architected by Hassan Elkady (AAST).</p>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <svg width="20" height="20" viewBox="0 0 100 100" fill="none" class="footer-logo">
+                    <rect x="10" y="10" width="35" height="35" rx="8" fill="#71717A" />
+                    <rect x="55" y="10" width="35" height="35" rx="8" fill="#71717A" />
+                    <rect x="10" y="55" width="80" height="35" rx="8" fill="#71717A" />
+                </svg>
+                <span>Anti-Slop UI © 2026.</span>
+            </div>
+            <div class="footer-right">
+                <span>Architected by Hassan Elkady (AAST).</span>
+            </div>
         </div>
     </footer>
 
-    <!-- Marked.js for markdown parsing -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <!-- Data file generated previously -->
-    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
