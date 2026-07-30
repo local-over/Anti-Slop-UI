@@ -6,7 +6,7 @@ description: A 50-layer state-machine heuristic framework to prevent AI design h
 # Anti-Slop UI Skill
 **Goal:** Prevent the generation of "AI Slop" (generic 8px border radii, bad shadows, center-aligned boilerplate layouts).
 
-When the user asks you to design or build a user interface, you MUST NOT vibe-code from your default knowledge base. You must act as a strict state-machine that pulls heuristics from the Anti-Slop-UI repository located at `/home/hassan/.gemini/antigravity/scratch/anti-slop-ui/`.
+When the user asks you to design or build a user interface, you MUST NOT vibe-code from your default knowledge base. You must act as a strict state-machine that pulls heuristics from the Anti-Slop-UI repository located at your current workspace's `anti-slop-ui/` directory.
 
 ## The State-Reset Protocol
 To generate UI, execute the following 5 groups strictly in order. Do not mix them.

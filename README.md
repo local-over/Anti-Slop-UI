@@ -6,15 +6,20 @@
 
 Welcome to the Anti-Slop UI framework. This open-source system forces AI coding assistants (like Cursor, Claude, and Antigravity) to build strict, human-grade user interfaces. It stops them from generating default, generic "vibe-coded" layouts.
 
-## 🚀 Quick Start: Install the AI Skill
+## 🌐 Live Interactive Viewer
+Explore the 61 Design Schools and 50 Heuristic Layers on our formal viewer built using the framework's own Vercel Minimalism logic: 
+**[https://local-over.github.io/Anti-Slop-UI/](https://local-over.github.io/Anti-Slop-UI/)**
 
-You can instantly upgrade your AI assistant by installing the **Anti-Slop UI Skill**.
+## 🚀 Quick Start: The Magic Install Prompt
 
+You can instantly upgrade your AI assistant (Cursor, Claude, Antigravity) by simply pasting the following one-line prompt into it. The AI will automatically clone the repository and install the skill for you:
+
+> **"Please run this exact command to clone the Anti-Slop UI framework: `git clone https://github.com/local-over/Anti-Slop-UI.git`. Then, read the `Anti-Slop-UI/README.md` file and copy the contents of `Anti-Slop-UI/public-skills/SKILL.md` into your global skills configuration or workspace instructions to cure AI UI slop."**
+
+Alternatively, you can manually install it:
 1. Copy the `SKILL.md` file from `/public-skills/SKILL.md`.
-2. Place it in your AI's global prompt configuration or workspace instructions.
-    - **For Antigravity:** Place it in `~/.gemini/config/skills/anti-slop-ui/SKILL.md`.
-    - **For Cursor/Claude:** Add the contents of `SKILL.md` to your `.cursorrules` or System Prompt.
-3. The AI will now act as a strict state-machine, read the heuristics in this repository, and ban all generic 8px rounded corners and default drop-shadows.
+2. Place it in your AI's global prompt configuration (e.g. `~/.gemini/config/skills/anti-slop-ui/SKILL.md` or your project's `.cursorrules`).
+3. The AI will now act as a strict state-machine, read the heuristics, and ban all generic 8px rounded corners and default drop-shadows.
 
 ## The Philosophy
 
